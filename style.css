@@ -1,0 +1,97 @@
+
+.titletext{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+  background-color: #5325d3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.join-box {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.join-box:hover {
+  background-color: #0056b3;
+}
+
+.about-section {
+  max-width: 600px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.forum-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.forum-table td {
+  border: 1px solid #16bd16;
+  padding: 8px;
+  text-align: left;
+}
+
+.alienfact {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.quiz{
+    align-items: center;
+    display: block;
+    justify-content: center;
+}
+
+.submitbutton {
+  display: block;
+  width: 10%;
+  padding: 5px;
+  background-color: #7c0cc7;
+  color: white;
+}
+
+.submitbutton:hover {
+  background-color: #089242;
+}
+
+.trackerpic{
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+}
