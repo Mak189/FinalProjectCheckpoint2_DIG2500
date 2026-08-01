@@ -1,10 +1,11 @@
-
-.titletext{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.titletext {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
 }
 
 header {
@@ -18,7 +19,10 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 25px;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
@@ -29,6 +33,29 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+.theme-btn {
+  background-color: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.theme-btn:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+header nav .theme-btn {
+  color: white;
+  border-color: white;
+}
+
+header nav .theme-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .join-box {
@@ -45,8 +72,6 @@ nav a:hover {
 
 .about-section {
   max-width: 600px;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
   border: 1px solid #ccc;
   text-align: center;
@@ -57,6 +82,7 @@ nav a:hover {
   width: 100%;
   max-width: 900px;
   margin: 20px auto;
+  border-collapse: collapse;
 }
 
 .forum-table td {
@@ -72,26 +98,107 @@ nav a:hover {
   text-align: center;
 }
 
-.quiz{
-    align-items: center;
-    display: block;
-    justify-content: center;
+.quiz {
+  display: block;
 }
 
 .submitbutton {
   display: block;
-  width: 10%;
-  padding: 5px;
+  width: 100%;
+  max-width: 150px;
+  padding: 8px;
   background-color: #7c0cc7;
   color: white;
+  border: none;
+  cursor: pointer;
+  margin: 15px auto;
 }
 
 .submitbutton:hover {
   background-color: #089242;
 }
 
-.trackerpic{
-    align-items: center;
-    display: block;
-    margin: 0 auto;
+.trackerpic {
+  display: block;
+  margin: 0 auto;
+}
+
+.joinpage {
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  color: #111111;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #2a136e;
+}
+
+body.dark-mode .join-box,
+body.dark-mode .about-section,
+body.dark-mode .alienfact,
+body.dark-mode .joinpage {
+  background-color: #1e1e1e;
+  border-color: #333333;
+}
+
+body.dark-mode a {
+  color: #00ffcc;
+}
+
+body.dark-mode nav a {
+  color: white;
+}
+
+body.dark-mode .modal-content {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #00ffcc;
+}
+
+body.dark-mode header nav .theme-btn {
+  color: #00ffcc;
+  border-color: #00ffcc;
+}
+
+body.dark-mode header nav .theme-btn:hover {
+  background-color: rgba(0, 255, 204, 0.15);
 }

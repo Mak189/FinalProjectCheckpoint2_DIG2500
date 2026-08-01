@@ -8,3 +8,22 @@ const facts = [
 
 const randomIndex = Math.floor(Math.random() * facts.length);
 document.getElementById('fact-text').textContent = facts[randomIndex];
+
+const themeToggle = document.getElementById('themeToggle');
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark-mode');
+  themeToggle.textContent = 'Light Mode';
+}
+themeToggle.addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+  const isDarkMode = document.body.classList.contains('dark-mode');
+  
+  if (isDarkMode) {
+    themeToggle.textContent = 'Light Mode';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    themeToggle.textContent = 'Dark Mode';
+    localStorage.setItem('theme', 'light');
+  }
+});

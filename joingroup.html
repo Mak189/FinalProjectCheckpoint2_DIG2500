@@ -12,35 +12,43 @@
       <ul>
         <li><a href="index.html">About</a></li>
         <li><a href="message-board.html">Message Board</a></li>
-        <li><a href="tracker.html">Tracker</a></li>
       </ul>
     </nav>
-    
   </header>
 
-  <main>
-  <form class="quiz">
-    <h2>Preliminary membership quiz</h2>
+<main>
+  <div class="joinpage">
+    <h2>Thank you for your interest in joining the Alien Hunter Forums!</h2>
+    <p>We require all incoming members to take a short quiz to test their knowledge and see if they have what it takes! Please fill out the answers below and an admin will reach out to you through your inbox.</p>
 
-    <div class="question">
-      <p>Which state has had the most sightings?</p>
-      <label><input type="radio" name="q1"> New Mexico</label><br>
-      <label><input type="radio" name="q1"> Nevada</label><br>
-      <label><input type="radio" name="q1"> Arizona</label><br>
-      <label><input type="radio" name="q1"> Utah</label>
-    </div>
+    <form class="quiz-form">
+      <div class="question">
+        <p class="question-title">1. What state is Area 51 in?</p>
+        <label><input type="radio" name="q1" value="nm"> Colorado</label><br>
+        <label><input type="radio" name="q1" value="ca"> Nevada</label><br>
+        <label><input type="radio" name="q1" value="nv"> Florida</label><br>
+        <label><input type="radio" name="q1" value="az"> Oklahoma</label>
+      </div>
 
-    <div class="question">
-      <p>2. When was the first UFO identified?</p>
-      <label><input type="radio" name="q2"> 1992</label><br>
-      <label><input type="radio" name="q2"> 173 A.D.</label><br>
-      <label><input type="radio" name="q2"> 2001</label><br>
-      <label><input type="radio" name="q2"> 1742</label>
-    </div>
+      <div class="question">
+        <p class="question-title">2. Where has the most alien sightings been?</p>
+        <label><input type="radio" name="q2" value="grey"> United States</label><br>
+        <label><input type="radio" name="q2" value="reptilian"> Japan</label><br>
+        <label><input type="radio" name="q2" value="nordic"> Germany</label><br>
+        <label><input type="radio" name="q2" value="insectoid"> Egypt</label>
+      </div>
 
-    <button class="submitbutton">Submit Answers</button>
-  </form>
+      <div class="question">
+        <p class="question-title">3. What year did the Roswell incident occur?</p>
+        <label><input type="radio" name="q3" value="1947"> 1947</label><br>
+        <label><input type="radio" name="q3" value="1951"> 1951</label><br>
+        <label><input type="radio" name="q3" value="1962"> 1962</label><br>
+        <label><input type="radio" name="q3" value="1973"> 1973</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Answers</button>
+    </form>
+  </div>
 </main>
-
 </body>
 </html>
